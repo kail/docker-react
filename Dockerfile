@@ -1,4 +1,6 @@
-FROM node:alpine as builder
+# Same AWS issue here
+#FROM node:alpine as builder
+FROM node:alpine
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
